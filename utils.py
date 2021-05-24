@@ -1,3 +1,4 @@
+import sys
 
 def read_from_the_file(fileName: str):
     """
@@ -14,22 +15,29 @@ def read_from_the_file(fileName: str):
     """
     capacities = list()
 
-    with open(fileName, 'r') as file:
-        # read start and sink node
-        firstLine = file.readline().strip()
-        numOfNodes, start, sink = firstLine.split(",")
+    # try to read from the file
+    try:
+        with open(fileName, 'r') as file:
+            # read number of nodes, start and sink node
+            firstLine = file.readline().strip()
+            numOfNodes, start, sink = firstLine.split(",")
 
-        # read capacities to an array
-        for line in file:
-            row = list()
-            line = line[:-2]
-            line = line.replace("[", "").replace("]", "")
+            # read capacities to an array
+            for line in file:
+                row = list()
+                line = line[:-2]
+                line = line.replace("[", "").replace("]", "")
 
-            for capacity in line.strip().split(","):
-                row.append(int(capacity))
+                for capacity in line.strip().split(","):
+                    row.append(int(capacity))
 
-            capacities.append(row)
+                capacities.append(row)
+    except IOError:
+        print("Wrong file name. Try again!")
+        sys.exit()
 
     # check if rows == columns and raise an exception if is not
+    if len(capacity) != len(capacity[0]):
+        raise Exception(f"You should pass square array in {fileName} file")
 
     return capacities, start, sink
