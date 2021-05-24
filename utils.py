@@ -1,5 +1,3 @@
-import sys
-
 def read_from_the_file(fileName: str):
     """
     Function read input from the file
@@ -20,7 +18,8 @@ def read_from_the_file(fileName: str):
         with open(fileName, 'r') as file:
             # read number of nodes, start and sink node
             firstLine = file.readline().strip()
-            numOfNodes, start, sink = firstLine.split(",")
+            start, sink = firstLine.split(",")
+            start, sink = int(start), int(sink)
 
             # read capacities to an array
             for line in file:
@@ -32,12 +31,17 @@ def read_from_the_file(fileName: str):
                     row.append(int(capacity))
 
                 capacities.append(row)
+
+            numOfNodes = len(capacities)
+            if start < 0 or sink > numOfNodes - 1:
+                raise Exception("Wrong index of start or sink node!")
+
     except IOError:
-        print("Wrong file name. Try again!")
-        sys.exit()
+        raise Exception("Wrong file name. Try again!")
+
 
     # check if rows == columns and raise an exception if is not
-    if len(capacity) != len(capacity[0]):
+    if len(capacities) != len(capacities[0]):
         raise Exception(f"You should pass square array in {fileName} file")
 
     return capacities, start, sink
