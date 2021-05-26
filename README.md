@@ -40,12 +40,22 @@ Format of the file is as folows:
 
 ## Installation
 To try out the algorithm just download this github repository and save somewhere in your computer. Then go to the `EdmondsKarp` folder, open terminal and type:  
-```python main.py```
-Program will ask for the name of the file to read from (simply type the name of the file with .txt extension):  
-![input](images/input.jpg)
+```console
+$ python main.py
+```
+Program will ask for the name of the file to read from (simply type the name of the file with .txt extension): 
+```console
+File name to read the input from: graph.txt
+``` 
 
 ## Output
-![output](images/output.jpg)
+```console
+------AUGMENTED PATHS------
+1 path: [0, 2, 4, 5]
+2 path: [0, 2, 4, 3, 5]
+3 path: [0, 1, 3, 5]
+Maximum flow in this network:  23
+```
 
 Algorithm returns not only maximum flow in the given network but also augmented paths that were found during the execution of the program.
 
