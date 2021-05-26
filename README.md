@@ -1,8 +1,9 @@
 <h1 align="center">Edmonds Karp - Algorithm Implementation</h1>
-
-<img src="https://img.shields.io/badge/python-3.9.1-green.svg">
-<img src="https://img.shields.io/badge/made%20by-jwozn2k-blue.svg">
-<img src="https://img.shields.io/badge/technologies-PyCharm, VSC-red.svg">
+<span>
+    <img src="https://img.shields.io/badge/python-3.9.1-green.svg">
+    <img src="https://img.shields.io/badge/made%20by-jwozn2k-blue.svg">
+    <img src="https://img.shields.io/badge/technologies-PyCharm, VSC-red.svg">
+</span>
 
 Algorithm written for the subject Graph Theory related to the current course of study.
 
