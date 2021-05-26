@@ -43,13 +43,13 @@ To try out the algorithm just download this github repository and save somewhere
 ```console
 $ python main.py
 ```
-Program will ask for the name of the file to read from (simply type the name of the file with .txt extension): 
-```console
+Program will ask for the name of the file to read from (simply type the name of the file with .txt extension):  
+```
 File name to read the input from: graph.txt
 ``` 
 
 ## Output
-```console
+```
 ------AUGMENTED PATHS------
 1 path: [0, 2, 4, 5]
 2 path: [0, 2, 4, 3, 5]
