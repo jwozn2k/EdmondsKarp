@@ -1,18 +1,27 @@
 <h1 align="center">Edmonds Karp - Algorithm Implementation</h1>
 
 <img src="https://img.shields.io/badge/python-3.9.1-green.svg">
+<img src="https://img.shields.io/badge/made%20by-jwozn2k-blue.svg">
+<img src="https://img.shields.io/badge/technologies-PyCharm, VSC-red.svg">
 
 Algorithm written for the subject Graph Theory related to the current course of study.
 
-## Table of Content
-- [Table of Content](#table-of-content)
-- [About Algorithm](#about-algorithm)
+## Table of content
+- [Table of content](#table-of-content)
+- [About the algorithm](#about-the-algorithm)
+- [Example graphs](#example-graphs)
 - [Input format](#input-format)
-- [Example Graph](#example-graph)
+- [Installation](#installation)
+- [Output](#output)
 
-## About Algorithm
-Edmonds-Karp algorithm is an implementation of the Ford-Fulkerson method that uses BFS for finding augmenting paths. Given a (network) graph which is just a set of verticies and directed edges with certain capacity. Algorithm tries to find maximum flow that can bu pushed from the source to the sink.  
-More info about the algorithm you can be found [here](https://en.wikipedia.org/wiki/Edmonds%E2%80%93Karp_algorithm).
+## About the algorithm
+Edmonds-Karp algorithm is an implementation of the Ford-Fulkerson method that uses BFS for finding augmenting paths. Given a (network) graph which is just a set of verticies and directed edges with certain capacity. Algorithm tries to find maximum flow that can be pushed from the source to the sink.  
+More info about the algorithm you can be found [here](https://en.wikipedia.org/wiki/Edmonds%E2%80%93Karp_algorithm). 
+
+## Example graphs
+![img1](images/img1.jpg)
+
+![img2](images/img2.png)
 
 ## Input format
 ```json
@@ -27,8 +36,18 @@ More info about the algorithm you can be found [here](https://en.wikipedia.org/w
 Algorithm reads input from the file (with .txt extension) which should be put in to [`graphs`](https://github.com/jwozn2k/EdmondsKarp/tree/main/graphs) folder.  
 Format of the file is as folows:  
 - First two digits separated by a coma are number of a source and sink node in the network.
-- Then 2D adjacency matrix that represents maximum capacity of the edge between two vertices. (Zero means that there is no edge between two nodes).  
+- Then 2D adjacency matrix that represents maximum capacity of the edge between two vertices. (Zero means that there is no edge between two nodes). 
 
-## Example Graph
+## Installation
+To try out the algorithm just download this github repository and save somewhere in your computer. Then go to the `EdmondsKarp` folder, open terminal and type:  
+```python main.py```
+Program will ask for the name of the file to read from (simply type the name of the file with .txt extension):  
+![input](images/input.jpg)
+
+## Output
+![output](images/output.jpg)
+
+Algorithm returns not only maximum flow in the given network but also augmented paths that were found during the execution of the program.
+
 
   

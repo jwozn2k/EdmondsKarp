@@ -78,7 +78,7 @@ def BFS(residualCapacity: list, start: int, sink: int):
     return foundAugmentedPath, parent
 
 if __name__ == "__main__":
-    fileName = input("File name to read the input form: ")
+    fileName = input("File name to read the input from: ")
     matrix, s, t = read_from_the_file("graphs/" + fileName)
     maxFlow = BelmandFord(matrix, s, t)
     print("Maximum flow in this network: ", maxFlow)
