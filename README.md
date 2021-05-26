@@ -8,7 +8,6 @@
 Algorithm written for the subject Graph Theory related to the current course of study.
 
 ## Table of content
-- [Table of content](#table-of-content)
 - [About the algorithm](#about-the-algorithm)
 - [Example graphs](#example-graphs)
 - [Input format](#input-format)
@@ -17,7 +16,7 @@ Algorithm written for the subject Graph Theory related to the current course of 
 
 ## About the algorithm
 Edmonds-Karp algorithm is an implementation of the Ford-Fulkerson method that uses BFS for finding augmenting paths. Given a (network) graph which is just a set of verticies and directed edges with certain capacity. Algorithm tries to find maximum flow that can be pushed from the source to the sink.  
-More info about the algorithm you can be found [here](https://en.wikipedia.org/wiki/Edmonds%E2%80%93Karp_algorithm). 
+More info about the algorithm you can be found <a target="_blank" href="https://en.wikipedia.org/wiki/Edmonds%E2%80%93Karp_algorithm">here</a>. 
 
 ## Example graphs
 ![img1](images/img1.jpg)
