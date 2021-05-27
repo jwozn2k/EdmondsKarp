@@ -23,16 +23,6 @@ More info about the algorithm you can be found <a href="https://en.wikipedia.org
 
 ![img2](images/img2.png)
 
-## Installation
-To try out the algorithm just download this github repository and save somewhere in your computer. Then go to the `EdmondsKarp` folder, open terminal and type:  
-```console
-$ python main.py
-```
-Program will ask for the name of the file to read from (simply type the name of the file with .txt extension):  
-```
-File name to read the input from: graph.txt
-``` 
-
 ## Input format
 ```json
 0, 5
@@ -47,6 +37,16 @@ Algorithm reads input from the file (with .txt extension) which should be put in
 Format of the file is as folows:  
 - First two digits separated by a coma are number of a source and sink node in the network.
 - Then 2D adjacency matrix that represents maximum capacity of the edge between two vertices. (Zero means that there is no edge between two nodes). 
+
+## Installation
+To try out the algorithm just download this github repository and save somewhere in your computer. Then go to the `EdmondsKarp` folder, open terminal and type:  
+```console
+$ python main.py
+```
+Program will ask for the name of the file to read from (simply type the name of the file with .txt extension):  
+```
+File name to read the input from: graph.txt
+``` 
 
 ## Output
 ```
